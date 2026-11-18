@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Notice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>Don Mariano Marcos Memorial State University</header>
+    <style>
+      * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #004d00;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Flexbox para sa Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  flex: 1;
+}
+
+main h1 {
+  margin-bottom: 25px;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+    </style>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+    </nav>
+    
+    <main>
+      <h1>Campus Notice</h1>
+      
+      <!-- Flexbox Container para sa Form at Image -->
+      <div class="content-box">
+        <form action="/api/notice" method="post">
+          <h3>Login Form</h3>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" />
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" name="Password" />
+          
+          <button type="submit">Login</button>
+        </form>
+        
+        <img src="DMMMSU.png" alt="Campus DMMMSU" />
+      </div>
+    </main>
+  </body>
+</html>
